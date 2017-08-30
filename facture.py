@@ -23,9 +23,13 @@ def tva(param1):
 while True:
     montant=int(input("entrer le montant : "))
     while True:
-        Type = input("type de remise : ")    
-        taux = int(input("taux de remise: "))
-        oper(taux,montant)
+        answer=input("des remises ?? [oui/non]")
+        if answer =="oui" or answer=="OUI":
+                    Type = input("type de remise : ")    
+                    taux = int(input("taux de remise: "))
+                    oper(taux,montant)
+        else:
+            pass;
         answer=input("d'autres remises ? [oui/non] : ")
         if answer =="oui" or answer=="OUI":
             pass;
